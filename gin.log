@@ -1,0 +1,51 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] HEAD   /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.html
+
+[GIN-debug] GET    /api/videos               --> main.main.func1 (4 handlers)
+[GIN-debug] POST   /api/video                --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /view/videos              --> github.com/alim7007/gin-gonic/controller.VideoController.ShowAll-fm (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8001
+::1 - [2023-02-17 17:13:21.093776 +0200 EET m=+3.266049793] GET /view/videos 200 676µs 
+127.0.0.1 - [2023-02-17 17:13:27.157063 +0200 EET m=+9.329160126] POST /api/video 200 1.419333ms 
+127.0.0.1 - [2023-02-17 17:13:33.920573 +0200 EET m=+16.092472668] GET /api/videos 200 53.75µs 
+[GIN-debug] [WARNING] Headers were already written. Wanted to override status code 200 with 500
+::1 - [2023-02-17 17:16:05.792733 +0200 EET m=+167.960204251] GET /view/videos 200 499.917µs 
+127.0.0.1 - [2023-02-17 17:16:15.951737 +0200 EET m=+178.118911334] GET /api/videos 200 77.166µs 
+127.0.0.1 - [2023-02-17 17:16:18.160704 +0200 EET m=+180.327814001] POST /api/video 200 120.167µs 
+127.0.0.1 - [2023-02-17 17:16:20.36243 +0200 EET m=+182.529475584] GET /api/videos 200 37.458µs 
+127.0.0.1 - [2023-02-17 17:16:27.879147 +0200 EET m=+190.045973918] POST /api/video 200 87.792µs 
+::1 - [2023-02-17 17:16:32.564146 +0200 EET m=+194.730836709] GET /view/videos 200 827.25µs 
+::1 - [2023-02-17 17:18:13.211765 +0200 EET m=+295.375520251] GET /view/videos 200 622µs 
+::1 - [2023-02-17 17:19:33.334234 +0200 EET m=+375.495652293] GET /view/videos 200 1.027292ms 
+::1 - [2023-02-17 17:19:34.248211 +0200 EET m=+376.409602293] GET /view/videos 200 435.875µs 
+::1 - [2023-02-17 17:19:53.485539 +0200 EET m=+395.646369084] GET /view/videos 200 447.625µs 
+::1 - [2023-02-17 17:19:53.495788 +0200 EET m=+395.656618168] GET /view/css/style.css 404 3.5µs 
+::1 - [2023-02-17 17:19:53.908622 +0200 EET m=+396.069440626] GET /view/videos 200 404.208µs 
+::1 - [2023-02-17 17:19:53.919062 +0200 EET m=+396.079880168] GET /view/css/style.css 404 3.167µs 
+::1 - [2023-02-17 17:20:10.99029 +0200 EET m=+413.150609626] GET /view/videos 200 412.292µs 
+::1 - [2023-02-17 17:20:11.001027 +0200 EET m=+413.161347126] GET /view/style.css 404 3.292µs 
+::1 - [2023-02-17 17:20:14.292107 +0200 EET m=+416.452330418] GET /view/videos 200 875.959µs 
+::1 - [2023-02-17 17:20:14.302645 +0200 EET m=+416.462868709] GET /view/style.css 404 4.708µs 
+::1 - [2023-02-17 17:20:14.504186 +0200 EET m=+416.664403376] GET /view/videos 200 418.083µs 
+::1 - [2023-02-17 17:20:14.514687 +0200 EET m=+416.674903668] GET /view/style.css 404 3.459µs 
+::1 - [2023-02-17 17:20:14.664005 +0200 EET m=+416.824218251] GET /view/videos 200 365.208µs 
+::1 - [2023-02-17 17:20:14.673596 +0200 EET m=+416.833808543] GET /view/style.css 404 3.75µs 
+::1 - [2023-02-17 17:21:06.627689 +0200 EET m=+468.814024584] GET /view/videos 200 430.875µs 
+::1 - [2023-02-17 17:21:06.63835 +0200 EET m=+468.824687251] GET /view/css/style.css 404 3.542µs 
+::1 - [2023-02-17 17:21:07.036483 +0200 EET m=+469.222851084] GET /view/videos 200 418.875µs 
+::1 - [2023-02-17 17:21:07.046984 +0200 EET m=+469.233353209] GET /view/css/style.css 404 3.208µs 
+::1 - [2023-02-17 17:21:07.21104 +0200 EET m=+469.397421793] GET /view/videos 200 374.75µs 
+::1 - [2023-02-17 17:21:07.220452 +0200 EET m=+469.406834751] GET /view/css/style.css 404 2.917µs 
+::1 - [2023-02-17 17:21:33.93593 +0200 EET m=+496.123012668] GET /view/videos 200 375.459µs 
+::1 - [2023-02-17 17:21:57.685078 +0200 EET m=+519.871884834] GET /view/videos 200 391.625µs 
+::1 - [2023-02-17 17:22:02.232996 +0200 EET m=+524.419724751] GET /view/videos 200 426.042µs 
+::1 - [2023-02-17 17:22:06.943503 +0200 EET m=+529.130146626] GET /view/videos 200 384.75µs 
